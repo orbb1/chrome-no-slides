@@ -9,6 +9,7 @@ chrome.runtime.onInstalled.addListener(async () => {
 chrome.contextMenus.onClicked.addListener((item) => {
   const suffix = 'http://localhost:3000/results'
   const params = new URLSearchParams()
+  // TODO: validate url;
   params.append('url', item.linkUrl)
   const url = suffix + "?" + params.toString()
   chrome.tabs.create({ url })
