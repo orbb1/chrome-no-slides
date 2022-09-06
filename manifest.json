@@ -1,0 +1,13 @@
+{
+  "name": "No slides",
+  "description": "Extension for no slides",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
